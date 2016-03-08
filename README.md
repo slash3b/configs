@@ -1,7 +1,11 @@
 # tmux-config
-Personal tmux config file
 
-Just copy-paste the content of .tmux.conf to your ~/.tmux.conf file.
+Personal tmux config file and other settings.
+
+
+# TMUX
+
+Just copy-paste the content of .tmux.conf to your ~/.tmux.conf file or `ln -s {{path/to/file}} {{path/to/symlink}}`.
 
 SHIFT + arrow to switch pages
 
