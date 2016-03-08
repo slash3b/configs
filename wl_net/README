@@ -1,0 +1,3 @@
+took it from https://onpub.com/install-broadcom-linux-wi-fi-driver-on-fedora-23-s7-a192
+
+wget http://git.io/vuLC7 -v -O fedora23_broadcom_wl_install.sh && sh ./fedora23_broadcom_wl_install.sh;
