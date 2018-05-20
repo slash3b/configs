@@ -1,0 +1,8 @@
+[user]
+	name = Tribusean Ilya
+	email = slash3b@gmail.com
+[core]
+	excludesfile = ~/.gitignore
+	filemode = false
+[gpg]
+	program = gpg2
