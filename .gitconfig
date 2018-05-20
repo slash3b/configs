@@ -1,8 +1,11 @@
 [user]
 	name = Tribusean Ilya
 	email = slash3b@gmail.com
+	signingkey = 9C6E727A654F95BD
 [core]
 	excludesfile = ~/.gitignore
 	filemode = false
 [gpg]
 	program = gpg2
+[commit]
+	gpgsign = true
