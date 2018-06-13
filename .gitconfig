@@ -5,6 +5,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	filemode = false
+	editor = vim
 [gpg]
 	program = gpg2
 [commit]
