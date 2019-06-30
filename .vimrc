@@ -21,3 +21,8 @@ let mapleader=","
 set pastetoggle=<F2>
 " Fast saving
 nmap <leader>w :w!<cr>
+
+" turn off all the colors
+syntax off
+set nohlsearch
+set t_Co=0
