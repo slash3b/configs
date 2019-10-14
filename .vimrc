@@ -9,7 +9,7 @@ set so=5
 " Set auto indent 
 set ai
 " tabsize is 4 spaces
-set tabstop=4
+set tabstop=2
 " this will turn tab into spaces
 set expandtab
 set autoindent
@@ -25,4 +25,3 @@ nmap <leader>w :w!<cr>
 " turn off all the colors
 syntax off
 set nohlsearch
-set t_Co=0
