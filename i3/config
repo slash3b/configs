@@ -171,6 +171,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id /usr/bin/xbacklight -dec 5
 
 exec --no-startup-id feh --bg-max ${HOME}/Pictures/wallpapers/road.jpg
 
-
+exec "setxkbmap -layout us,ru"
+exec "setxkbmap -option 'grp:alt_shift_toggle'"
 
 
