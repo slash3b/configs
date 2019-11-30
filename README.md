@@ -1,7 +1,7 @@
 ### My dotfiles
 
 This will create soft links in home directory for every hidden config file:  
-`ln -sf  (pwd)/.* ~/`
+`ln -sf  (pwd)/.* ~/`   
 `ln -sf  (pwd)/i3/* ~/.config/i3/`
 
 
