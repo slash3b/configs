@@ -16,7 +16,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -171,8 +171,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id /usr/bin/xbacklight -dec 5
 
 exec --no-startup-id feh --bg-max ${HOME}/Pictures/wallpapers/road.jpg
 
-exec_always "setxkbmap -layout us,ru"
-exec_always "setxkbmap -option 'grp:win_space_toggle'"
+exec --no-startup-id "setxkbmap -layout us,ru -option grp:win_space_toggle"
 
 # move focused workspace between monitors
 bindsym $mod+Ctrl+greater move workspace to output right
