@@ -25,3 +25,4 @@ nmap <leader>w :w!<cr>
 " turn off all the colors
 syntax off
 set nohlsearch
+colo blue

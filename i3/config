@@ -32,7 +32,6 @@ bindsym $mod+d exec $menu
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-# bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
@@ -167,7 +166,10 @@ bindsym XF86AudioLowerVolume exec amixer set Master 5%- #decrease sound volume
 bindsym XF86AudioMute exec amixer set Master 1+ toggle # mute sound
 bindsym XF86AudioMicMute exec amixer set Capture toggle # mute mic
 
-bindsym $mod+l exec --no-startup-id i3lock -c 000000 -d
+# screen brightness controls
+# with visudo do <username> ALL=NOPASSWD: /usr/bin/light
+bindsym XF86MonBrightnessUp exec "sudo light -A 15 && notify-send 'Brightness +15%'
+bindsym XF86MonBrightnessDown exec "sudo light -U 15 && notify-send 'Brightness -15%'
 
 bindsym XF86MonBrightnessUp exec --no-startup-id /usr/bin/xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec --no-startup-id /usr/bin/xbacklight -dec 5
@@ -184,11 +186,6 @@ exec --no-startup-id nm-applet
 # move focused workspace between monitors
 bindsym $mod+Ctrl+greater move workspace to output right
 bindsym $mod+Ctrl+less move workspace to output left
-
-# the possibility to come back to your last workspace with the same keystroke
-# https://thevaluable.dev/window-manager-mouseless-i3/
-workspace_auto_back_and_forth yes
-
 
 
 
