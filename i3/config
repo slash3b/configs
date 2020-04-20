@@ -6,7 +6,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-set $menu rofi -modi drun -show drun -font "mono 18"
+set $menu rofi -combi-modi run,drun -show combi
 set $barcmd i3status
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -170,9 +170,6 @@ bindsym XF86AudioMicMute exec amixer set Capture toggle # mute mic
 # with visudo do <username> ALL=NOPASSWD: /usr/bin/light
 bindsym XF86MonBrightnessUp exec "sudo light -A 15 && notify-send 'Brightness +15%'
 bindsym XF86MonBrightnessDown exec "sudo light -U 15 && notify-send 'Brightness -15%'
-
-bindsym XF86MonBrightnessUp exec --no-startup-id /usr/bin/xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec --no-startup-id /usr/bin/xbacklight -dec 5
 
 # https://dougie.io/linux/hidpi-retina-i3wm/
 

@@ -6,17 +6,20 @@ set autoread
 
 " BEHAVIOR ------------
 set so=5
-" Set auto indent 
-set ai
-" tabsize is 4 spaces
-set tabstop=2
-" this will turn tab into spaces
-set expandtab
-set autoindent
-" code shift width
-set sw=4
+
+" --------------------------------------------------------------------------------
+" configure editor with tabs and nice stuff...
+" --------------------------------------------------------------------------------
+set expandtab           " enter spaces when tab is pressed
+set textwidth=120       " break lines when line length increases
+set tabstop=4           " use 4 spaces to represent tab
+set softtabstop=4
+set shiftwidth=4        " number of spaces to use for auto indent
+set autoindent          " copy indent from current line when starting a new line
+
 " set map leader
 let mapleader=","
+
 " hit F2 in insert mode to paste corretly data
 set pastetoggle=<F2>
 " Fast saving
