@@ -171,6 +171,9 @@ bindsym XF86AudioMicMute exec amixer set Capture toggle # mute mic
 bindsym XF86MonBrightnessUp exec "sudo light -A 15 && notify-send 'Brightness +15%'
 bindsym XF86MonBrightnessDown exec "sudo light -U 15 && notify-send 'Brightness -15%'
 
+# lock screen
+bindsym $mod+l exec --no-startup-id i3lock -c 000000 -d
+
 # https://dougie.io/linux/hidpi-retina-i3wm/
 
 # walls <3
