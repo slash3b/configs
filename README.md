@@ -20,8 +20,7 @@ http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
 ##### Graphics
 
 For intel:
-
-/etc/X11/xorg.conf.d/
+/etc/X11/xorg.conf.d/20-intel.conf
 
 ```
 Section "Device"
