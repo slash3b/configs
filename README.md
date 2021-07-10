@@ -4,7 +4,6 @@ This will create soft links in home directory for every hidden config file:
 `ln -sf  (pwd)/.* ~/`   
 `ln -sf  (pwd)/i3/* ~/.config/i3/`
 
-
 ##### TMUX
 
 Just copy-paste the content of .tmux.conf to your ~/.tmux.conf file or `ln -s {{path/to/file}} {{path/to/symlink}}`.
@@ -15,7 +14,6 @@ The original file I stole from https://gist.github.com/spicycode/1229612.
 
 Additional info:
 http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
-
 
 ##### Graphics
 
@@ -40,5 +38,4 @@ Run alsamixer, then:
 - use the minus - key to switch it to Disabled
 - hit Esc to exit
 - run alsactl store as root to save
-
 

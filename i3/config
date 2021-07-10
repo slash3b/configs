@@ -161,10 +161,20 @@ bar {
 }
 
 # audio controls
-bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ #increase sound volume
-bindsym XF86AudioLowerVolume exec amixer set Master 5%- #decrease sound volume
-bindsym XF86AudioMute exec amixer set Master 1+ toggle # mute sound
-bindsym XF86AudioMicMute exec amixer set Capture toggle # mute mic
+# bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
+# bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
+# bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+# bindsym XF86AudioMicMute exec amixer set Capture toggle # mute mic
+
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+
+# pactl set-sink-mute @DEFAULT_SINK@ toggle
+# pactl set-sink-volume @DEFAULT_SINK@ +5%
+# pactl set-sink-volume @DEFAULT_SINK@ -5%
+# pactl set-sink-volume @DEFAULT_SINK@ 40%
+# pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # screen brightness controls
 # with visudo do <username> ALL=NOPASSWD: /usr/bin/light
